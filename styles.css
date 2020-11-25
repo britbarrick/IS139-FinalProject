@@ -35,6 +35,10 @@ h1 {
     font-size: 100px;
     padding-left: 15px;
 }
+h2 {
+    color: white;
+    margin-left: 5px;
+}
 
 /* hero image */
 header {
