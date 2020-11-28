@@ -1,0 +1,133 @@
+/* Styles.css *//*
+    Stay Home Festival style sheet
+    Filename: styles.css
+
+    Authors:    Brit Barrick, James Hornsby, Orion Strinni
+    Date:       11/17/20
+    IS139 - Group 1 Final Project
+*/
+
+/*
+    #593E67
+    #84495F
+    #B85B56
+    #DE741C
+    #FEA837
+*/
+
+/* reset styles */
+html {
+    font-size: 18px;
+    background-color: #593E67;
+}
+a, body, div, footer, header, h1, li, nav, p {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* body and page container */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #84495F;
+    font-family: Arial, Helvetica, sens-serif;
+}
+h1 {
+  font-size: 100px;
+  padding-left: 15px;
+}
+h2 {
+      color: black;
+      margin-left: 5px;
+}
+/* hero image */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+header.hero {
+    /*background-image: url("http://www.fillmurray.com/g/1100/600");*/
+    background-color: #000;
+    height: 600px;
+}
+header h1 { /* To block out "Stay Home Fest" since it's written in the hero img */
+  display: none;
+}
+h1 {
+    color: #fea837;
+}
+
+/* skip navigation link */
+p.skipnavigation {
+    margin: 0;
+}
+p.skipnavigation a {
+    position: absolute;
+    left: -10000px;
+}
+p.skipnavigation a:focus {
+    color: #000;
+    background-color: snow;
+    top: 2%;
+    left: auto;
+    right: 2%;
+    z-index: 2;
+}
+
+/* site navigation */
+nav.sitenavigation {
+    width: 100%;
+    text-align: center;
+    /*padding-left: 6%;*/
+    /*background-color: #fea837;*/
+}
+nav.sitenavigation li {
+    display: inline-block;
+    margin: 0.4em 0.6em;
+    font-size: 1.1em;
+    /*I changed the nav below to better fit the wireframe. */
+    padding: 5px 50px;
+    background-color: white;
+    border: 2px solid #fea837;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 5px;
+}
+nav.sitenavigation a:link {
+    color: black;
+    text-decoration: none;
+    /*color: #593E67;*/
+}
+nav.sitenavigation a:visited {
+    color: #84495F;
+}
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+    color: #593E67;
+    text-shadow: 1px -1px 0 #84495F;
+}
+
+/* main content */
+
+article {
+    background-color: white;
+    margin: 10px 15px;
+    padding: 5px 20px 30px;
+    border-bottom: 1px solid black;
+  }
+article, img {
+    float: right;
+}
+article a {
+  text-decoration: none;
+}
+/* footer */
+footer {
+    /*background-color: #fea837;*/
+}
+#footertext{
+  padding: 1% 1% 1% 5%;
+  background-color: white;
+  margin: 10px 15px 15px;
+}
