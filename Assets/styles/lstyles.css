@@ -1,0 +1,19 @@
+/* Styles.css *//*
+    Stay Home Festival style sheet
+    Filename: styles.css
+
+    Authors:    Brit Barrick, James Hornsby, Orion Strinni
+    Date:       11/17/20
+    IS139 - Group 1 Final Project
+*/
+#lineup {
+  margin: 10px;
+  display: block;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fea837;
+}
+
+figure {
+  float: right;
+}
