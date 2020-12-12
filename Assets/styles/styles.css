@@ -13,7 +13,9 @@ html {
     font-size: 18px;
 /*    background-color: #593E67;*/
 }
-a, body, div, footer, header, h1, li, nav, p {
+a, article, body, col, colgroup, div, fieldset, footer, form, 
+header, h1, h2, input, label, legend, li, nav, p, table, 
+tbody, td, thead, th, tr, ul {
     border: 0;
     padding: 0;
     margin: 0;
@@ -42,6 +44,7 @@ h2 {
       color: black;
       margin-left: 5px;
 }
+
 /* hero image */
 header {
     display: flex;
@@ -83,14 +86,11 @@ p.skipnavigation a:focus {
 nav.sitenavigation {
     width: 100%;
     text-align: center;
-    /*padding-left: 6%;*/
-    /*background-color: #fea837;*/
 }
 nav.sitenavigation li {
     display: inline-block;
     margin: 0.4em 0.6em;
     font-size: 1.1em;
-    /*I changed the nav below to better fit the wireframe. */
     padding: 5px 50px;
     background-color: white;
     border: 2px solid #fea837;
@@ -100,7 +100,6 @@ nav.sitenavigation li {
 nav.sitenavigation a:link {
     color: black;
     text-decoration: none;
-    /*color: #593E67;*/
 }
 nav.sitenavigation a:visited {
     color: #84495F;
@@ -111,19 +110,27 @@ nav.sitenavigation a:hover, nav.sitenavigation a:focus {
 }
 
 /* main content */
-
 article {
     background-color: white;
     margin: 10px 15px;
     padding: 5px 20px 30px;
     border-bottom: 1px solid black;
-  }
-article, img {
-    float: right;
+    float: left;
 }
 article a {
   text-decoration: none;
 }
+article p {
+    padding-top: 10px;
+}
+/* #left {
+    float: left;
+    width: 45%;
+} */
+article img {
+    float: right;
+}
+
 /* footer */
 footer{
   padding: 1% 1% 1% 5%;
