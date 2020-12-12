@@ -8,28 +8,61 @@
     IS139 - Group 1 Final Project
 */
 
+/* Grid Styles */
+form {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 500px;
+}
+.contactinfo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    width: auto;
+}
+.volunteerinfo {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    width: auto;
+}
+
 /* Field Set styles */
 fieldset {
     background-color: white;
-    border: 1px solid orange;
+    border: 2px solid #fea837;
+    border-radius: 5px;
     float: left;
     margin: 10px 0px 10px 2.5%;
     width: 46%;
+    padding: 5px 15px;
 }
 legend {
     background-color: orange;
+    border-radius: 5px;
     color: white;
     padding: 5px;
 }
 
 /* Label styles */
 label {
-    clear: left;
     display: block;
     float: left;
     font-size: 0.9em;
     margin: 7px 4% 7px 5px;
-    width: 40%;
+    width: 20%;
+}
+label[for="volunteer"], label[for="yes"],
+label[for="no"] {
+    width: max-content;
+}
+label[for="shirt"] {
+    width: max-content;
+    padding-top: 10px;
+}
+article p {
+    margin-block-start: inherit;
+    margin-top: 0;
 }
 
 /* Input Control styles */
@@ -38,7 +71,25 @@ input {
     float: left;
     font-size: 0.9em;
     margin: 7px 0px;
+    padding: 2px;
     width: 50%;
+
+    border: 2px solid #84495F;
+}
+input[type="radio"] {
+    width: 20px;
+    border: none;
+}
+textarea {
+    width: 50%;
+    height: 100px;
+    border: 2px solid #84495F;
+}
+
+/* Select Styles */
+select {
+    font-size: 0.9em;
+    margin: 15px;
 }
 
 /* Button styles */
@@ -48,7 +99,11 @@ input[type="submit"] {
 input[type="submit"], input[type="reset"] {
     height: 40px;
     margin-right: 20px;
+    margin-left: 2.5%;
     width: 200px;
+    border: 2px solid #fea837;
+    border-radius: 5px;
+    color: #84495F;
 }
 
 /* Validation styles */

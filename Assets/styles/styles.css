@@ -110,12 +110,15 @@ nav.sitenavigation a:hover, nav.sitenavigation a:focus {
 }
 
 /* main content */
+.maincontent{
+    background-color: white
+}
 article {
     background-color: white;
     margin: 10px 15px;
     padding: 5px 20px 30px;
     border-bottom: 1px solid black;
-    float: left;
+    /* float: left; */
 }
 article a {
   text-decoration: none;
@@ -136,4 +139,5 @@ footer{
   padding: 1% 1% 1% 5%;
   background-color: white;
   margin: 10px 15px 15px;
+  clear: both;
 }

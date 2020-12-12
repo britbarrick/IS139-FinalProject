@@ -36,7 +36,7 @@
           </ul>
         </nav>
         <article class="maincontent">
-          <h2>Contact Page</h2>
+          <h2>Contact Us</h2>
           <form action="results.html">
             <fieldset class="contactinfo">
               <legend>Contact Information</legend>
@@ -52,7 +52,30 @@
                 Phone
               </label>
               <input type="tel" name="phone" id="phoneinput">
+              <label for="questions">
+                Questions?
+              </label>
+              <textarea name="questions" id="questions"></textarea>
             </fieldset>
+            <fieldset class="volunteerinfo">
+              <legend>Volunteer Information</legend>
+              <label for="volunteer">Would you like to volunteer?</label>
+              <input type="radio" name="volunteer" id="yes" value="yes">
+              <label for="yes">Yes</label>
+              <input type="radio" name="volunteer" id="no" value="no">
+              <label for="no">No</label>
+              <br>
+              <label for="shirt">What size t-shirt do you wear?</label>
+              <select name="shirt" id="shirt">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="x-large">X-Large</option>
+                <option value="xx-large">XX-Large</option>
+              </select>
+            </fieldset>
+            <input type="submit" value="Submit Information">
+            <input type="reset" value="Cancel">
           </form>
         </article>
         <footer>
