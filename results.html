@@ -31,6 +31,26 @@
             </nav>
             <article>
                 <h2>Thank you for reaching out, one of our staff will be in touch with you shortly!</h2>
+                <p>Below is a summary of the information you provided</p>
+                <br>
+                <br>
+                <script>
+                   var formData = location.search;
+                   formData = formData.substring(1, formData.length);
+                   while (formData.indexOf("+") !== -1) {
+                      formData = formData.replace("+", " ");
+                   }
+                   while (formData.indexOf("=") !== -1) {
+                       formData = formData.replace("=", ": ");
+                   }
+                   formData = decodeURIComponent(formData);
+                   var formArray = formData.split("&");
+                   for (var i = 0; i < formArray.length; i = i + 1) {
+                      document.write("<p>" + formArray[i] + "</p>");
+                   }
+               </script>
+                <br>
+                <br>
                 <p>In the mean time, you should check out the <a href="lineup.html">lineup</a> and get ahold of your friends about
                 purchasing <a href="tickets.html">tickets</a> to the coolest music festival of the year!
                 </p>

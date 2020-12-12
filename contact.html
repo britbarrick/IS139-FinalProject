@@ -40,39 +40,52 @@
           <form action="results.html">
             <fieldset class="contactinfo">
               <legend>Contact Information</legend>
-              <label for="nameinput">
-                Name
+              <label for="fnameinput">
+                First Name
               </label>
-              <input type="text" name="name" id="nameinput" placeholder="First and Last Name">
+              <input type="text" name="First Name" id="fnameinput" placeholder="First Name" required="required">
+              <label for="lnameinput">
+                Last Name
+              </label>
+              <input type="text" name="Last Name" id="lnameinput" placeholder="Last Name" required="required">
               <label for="emailinput">
                 Email
               </label>
-              <input type="email" name="email" id="emailinput" placeholder="address@example.com">
+              <input type="email" name="Email Address" id="emailinput" placeholder="address@example.com" required="required">
               <label for="phoneinput">
                 Phone
               </label>
-              <input type="tel" name="phone" id="phoneinput">
+              <input type="tel" name="Phone Number" id="phoneinput" placeholder="555-555-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="required">
               <label for="questions">
                 Questions?
               </label>
-              <textarea name="questions" id="questions"></textarea>
+              <textarea name="Comments/Questions" id="questions"></textarea>
+              <br>
+              <input type="checkbox" name="Mailing List" id="newsletter">
+              <label for="newsletter"> 
+                Please send me updates and information about upcoming events.
+              </label>
             </fieldset>
             <fieldset class="volunteerinfo">
               <legend>Volunteer Information</legend>
               <label for="volunteer">Would you like to be a volunteer?</label>
-              <input type="radio" name="volunteer" id="yes" value="yes">
+              <input type="radio" name="Volunteer" id="yes" value="yes">
               <label for="yes">Yes</label>
-              <input type="radio" name="volunteer" id="no" value="no">
+              <input type="radio" name="Volunteer" id="no" value="no">
               <label for="no">No</label>
               <br>
               <label for="shirt">What size t-shirt do you wear?</label>
-              <select name="shirt" id="shirt">
+              <select name="Shirt Size" id="shirt">
                 <option value="small">Small</option>
                 <option value="medium">Medium</option>
                 <option value="large">Large</option>
                 <option value="x-large">X-Large</option>
                 <option value="xx-large">XX-Large</option>
               </select>
+              <label for="experience">
+                Please describe your experience.
+              </label>
+              <textarea name="Previous Experience" id="experience"></textarea>
             </fieldset>
             <input type="submit" value="Submit Information">
             <input type="reset" value="Cancel">
