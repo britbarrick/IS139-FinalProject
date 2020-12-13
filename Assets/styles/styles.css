@@ -11,7 +11,6 @@
 /* reset styles */
 html {
     font-size: 18px;
-/*    background-color: #593E67;*/
 }
 a, article, body, col, colgroup, div, fieldset, footer, form, 
 header, h1, h2, input, label, legend, li, nav, p, table, 
@@ -61,8 +60,6 @@ header h1 { /* To block out "Stay Home Fest" since it's written in the hero img 
 }
 h1 {
     color: #fea837;
-}
-body {
 }
 
 /* skip navigation link */
@@ -126,11 +123,7 @@ article a {
 article p {
     padding-top: 10px;
 }
-/* #left {
-    float: left;
-    width: 45%;
-} */
-article img {
+img.right {
     float: right;
 }
 
